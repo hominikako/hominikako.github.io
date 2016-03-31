@@ -27,12 +27,12 @@
 	 });
 
     $( "#artist1" ).click(function() {
-      $( "#artistdialog" ).load( "_artist1.html" );
+      $( "#artistdialog" ).load( "artist1.html" );
       $( "#artistdialog" ).dialog( "open" );
     });
 
     $( "#artist2" ).click(function() {
-      $( "#artistdialog" ).load( "_artist2.html" );
+      $( "#artistdialog" ).load( "artist2.html" );
 	    $( "#artistdialog" ).dialog( "open" );
     });
 
