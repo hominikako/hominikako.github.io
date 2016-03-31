@@ -1,0 +1,167 @@
+/**
+
+THIS CSS FILE IS DIVIDED IN TWO SECTIONS (GENERAL, SPECIFIC) 
+
+-THE GENERAL SECTION CONTAINS THE TEMPLATE FOR THE WEBSITE. 
+	* EVERY PAGE SHOULD USE THE GENERAL SECTION TO DEFINE ITS TEMPLATE (HEADER, SIDEBAR, FOOTER AND CONTENT)
+    * WE ALL WILL USE THIS SECTION, SO ANY MODIFICATION HERE SHOULD BE TOLD TO THE OTHERS.
+    * EVENTUALLY WE WILL PUT THIS SECTION IN ONE ONLY FILE, SO WE WILL IMPORT IT IN EVERY PAGE.
+
+- THE SPECIFIC SECTION CONTAINS THE CSS FOR ONE SPECIFIC PAGE (home, artists, gallery, contact,...)
+	* THIS IS THE PART THAT EVERYONE SHOULD MODIFY TO THEIR SPECIFIC REQUIREMENTS.
+	* THIS SECTION WILL BE ONLY APPLIED TO ONE PAGE
+    * EVENTUALLY WE WILL PUT THIS SECTION IN ONE ONLY FILE, SO WE CAN IMPORT IT JUST WHEN IT'S NEEDED
+
+*/
+
+
+/*//////////////////////////
+// GENERAL CSS TEMPLATE Section /////
+//////////////////////////*/
+
+header,
+section,
+aside,
+footer{
+	display: block;
+}
+
+body {
+	width:960px;
+	margin: 0 auto;
+	font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;
+	background:black;
+}
+
+header {
+	text-align:center;
+	background: white;
+	color:black;
+//	height:50px;
+	padding:5px;
+}
+
+header nav {
+	background:green;
+	height:30px;
+}
+
+
+#sidebar {
+    float: right;
+	width:100px;
+}
+
+#sidebar aside{
+	position: fixed;
+	top: 100px;
+	background:orange;
+	margin-top: 30px;
+    margin-bottom: 10px;
+	padding-left: 5px;
+    width:100px;
+}
+
+a:hover {
+	text:blue;
+	background:white;
+	opacity: 1.0;
+}
+
+
+#content{
+	float:left;
+	width:840px;
+   	margin-bottom: 10px;
+   //	background-color: lime;
+}
+
+footer{
+	clear:both;
+	text-align:center;
+	background: grey;
+	color:#fff;
+	height:50px;
+	padding:5px;
+	
+}
+
+
+/*//////////////////////////
+// SPECIFIC Artist CSS section /////
+//////////////////////////*/
+
+#artists  {
+	background-color: pink;
+	text-align:center;
+}
+
+#artists div img {
+	    width: 180px;
+	    height: 350px;
+    	display: inline-block;
+}
+
+#artist1 {	
+}
+#artist2 {
+}
+.artist1dialog {
+	//background-color: black;
+
+}
+.artist_photos  {
+  	width: 460px;
+	height: 500px;
+}
+
+
+.artist_photos section  {
+	margin-top: 20px;
+	width: 460px;
+	height: 400px;
+}
+
+.artist_photos aside{
+	width: 460px;
+	height: 80px;
+	position:static;
+}
+
+.artist_photos .photo_menu {
+	width: 460px;
+	height: 80px;
+	position:static;
+
+}
+
+.artist_photos aside img {
+  	width: 60px;
+	height: 80px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#detail {
+  	width: 460px;
+	height: 400px;
+}
+
+.dialogs {
+	background-color: black;
+}
+.ui-widget-content{
+	background-color: black;
+	background: black; /* For browsers that do not support gradients */
+	background: linear-gradient(black, gray);
+}
+
+.body-gray {
+
+background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    )
+}
+
