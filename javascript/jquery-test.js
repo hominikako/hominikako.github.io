@@ -27,9 +27,8 @@
 	 });
 
     $( "#artist1" ).click(function() {
-      $( "#artistdialog" ).load( "artist1.html" );
-        
-    // $("#artistdialog").style.background = linear-gradient(white, black);
+      $( "#artistdialog" ).load( "artist1.html" )z
+           // $("#artistdialog").style.background = linear-gradient(white, black);
     $("#artistdialog").css("background","linear-gradient(red, black)");
       $( "#artistdialog" ).dialog( "open" );
     });
