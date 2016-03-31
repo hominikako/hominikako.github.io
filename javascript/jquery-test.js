@@ -14,7 +14,7 @@
         duration: 1000
       },
       open: function(event,ui){
-        $("#artistdialog").siblings('.ui-dialog-titlebar').remove();
+         $("#artistdialog").siblings('.ui-dialog-titlebar').remove();
         $('body').addClass('body-gray');
 
       },
@@ -27,12 +27,16 @@
 	 });
 
     $( "#artist1" ).click(function() {
-      $( "#artistdialog" ).load( "_artist1.html" );
+      $( "#artistdialog" ).load( "artist1.html" );
+        
+    // $("#artistdialog").style.background = linear-gradient(white, black);
+    $("#artistdialog").css("background","linear-gradient(red, black)");
       $( "#artistdialog" ).dialog( "open" );
     });
 
     $( "#artist2" ).click(function() {
-      $( "#artistdialog" ).load( "_artist2.html" );
+      $( "#artistdialog" ).load( "artist2.html" );
+      $("#artistdialog").css("background","linear-gradient(violet, black)");
 	    $( "#artistdialog" ).dialog( "open" );
     });
 

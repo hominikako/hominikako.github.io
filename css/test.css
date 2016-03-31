@@ -92,20 +92,39 @@ footer{
 //////////////////////////*/
 
 #artists  {
-	background-color: pink;
-	text-align:center;
+	padding: 10px;
+	background-color: black;
+	color: white;
 }
 
 #artists div img {
-	    width: 180px;
+	    width: 260px;
 	    height: 350px;
-    	display: inline-block;
+    	/*display: inline-block;*/
+    	text-align:center;
 }
 
-#artist1 {	
+#artists h2{
+	text-align:center;
 }
-#artist2 {
+
+#artists p{
+	padding-left: 100px;
+	padding-right	: 80px;
+	float: left;
+	width: 180px;
+	text-align: justify;
+	
 }
+
+
+#artist1:hover {
+	box-shadow: 10px 10px 10px rgba(255, 0, 0, 5);
+}
+#artist2:hover {
+	box-shadow: 10px 10px 10px rgba(35, 173, 278, 5);
+}
+
 .artist1dialog {
 	//background-color: black;
 
@@ -113,6 +132,7 @@ footer{
 .artist_photos  {
   	width: 460px;
 	height: 500px;
+	color: white;
 }
 
 
@@ -153,7 +173,7 @@ footer{
 .ui-widget-content{
 	background-color: black;
 	background: black; /* For browsers that do not support gradients */
-	background: linear-gradient(black, gray);
+	background: linear-gradient(red, black);
 }
 
 .body-gray {
