@@ -35,7 +35,8 @@
 
     $( "#artist2" ).click(function() {
       $( "#artistdialog" ).load( "artist2.html" );
-      $("#artistdialog").css("background","linear-gradient(violet, black)");
+     // $("#artistdialog").css("background","linear-gradient(violet, black)");
+      $("#artistdialog").css("background-image","linear-gradient(#444, #111)");
 	    $( "#artistdialog" ).dialog( "open" );
     });
 
