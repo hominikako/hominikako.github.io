@@ -166,9 +166,8 @@ footer {
 }
 
 .artist1dialog {
-	//background-color: black;
-
 }
+
 .artist_photos  {
   	width: 460px;
 	height: 500px;
@@ -205,17 +204,34 @@ footer {
 #detail {
   	width: 460px;
 	height: 400px;
+	border:0;
 }
 
 .dialogs {
-	background-color: black;
+	//background-color: black;
 }
 .ui-widget-content{
 	background-color: black;
-	background: black; /* For browsers that do not support gradients */
-	background: linear-gradient(red, black);
+	background: transparent; /* For browsers that do not support gradients */
+	border:1;
 
 }
+
+.ui-dialog {
+	border:0px ; 
+//	background:black;
+}
+
+.ui-dialog-titlebar{
+	background: transparent;
+	boder:0px;
+}
+
+.ui-widget-header{
+	border: 1px solid white;
+}
+
+
 
 .body-gray {
 
