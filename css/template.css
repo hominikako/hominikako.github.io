@@ -62,6 +62,7 @@ header nav a:hover {
     border-radius: 6px;
     box-shadow: 0 1px 1px #777;
     zoom:1.1;
+    -moz-transform: scale(1.1); /* zoom for Firefox only */
 /*    position: absolute;
 content:"";
     transition:all 0.3s ease 0s;
@@ -93,8 +94,21 @@ content:"";
     background-color : transparent;
 }
 
+#sidebar aside img{
+	width:50px;
+	height:50px;
+}
+
+#sidebar aside img:hover{
+    zoom:1.5; 
+    -moz-transform: scale(1.5);  /* zoom for Firefox only */
+
+    box-shadow: 4px 4px 4px rgba(255, 0, 0, 5);
+    border-radius: 25px;
+}
+
 #sidebar aside#offer{
-	top: 400px;
+    top: 400px;
 }
 
 #sidebar aside#offer img {
@@ -108,16 +122,6 @@ content:"";
 @keyframes offerRotate { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
-#sidebar aside img{
-	width:50px;
-	height:50px;
-}
-
-#sidebar aside img:hover{
-    zoom:1.5;
-    box-shadow: 4px 4px 4px rgba(255, 0, 0, 5);
-    border-radius: 25px;
-}
 
 #content{
 	float:left;
