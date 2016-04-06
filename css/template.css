@@ -93,10 +93,30 @@ content:"";
     background-color : transparent;
 }
 
+#sidebar aside#offer{
+	top: 400px;
+}
+
+#sidebar aside#offer img {
+    -webkit-animation:offerRotate 3s linear infinite;
+    -moz-animation:offerRotate 3s linear infinite;
+    animation:offerRotate 3s linear infinite;
+}
+/* Image spining animation for the different browers*/
+@-moz-keyframes offerRotate { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes offerRotate { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes offerRotate { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
 #sidebar aside img{
 	width:50px;
 	height:50px;
+}
 
+#sidebar aside img:hover{
+    zoom:1.5;
+    box-shadow: 4px 4px 4px rgba(255, 0, 0, 5);
+    border-radius: 25px;
 }
 
 #content{

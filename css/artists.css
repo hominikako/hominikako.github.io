@@ -12,14 +12,11 @@
 #artists div img {
 	    width: 260px;
 	    height: 350px;
-    	/*display: inline-block;*/
     	text-align:center;
 }
 
 #artists h2{
 	text-align:center;
-	//	text-shadow: 0 1px 0 #000;
-
 }
 
 #artists p{
