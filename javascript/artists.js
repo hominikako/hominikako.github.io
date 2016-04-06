@@ -45,12 +45,9 @@
 		$("#detail").attr("src", $(this).attr('src'));
 	});
 
+ });
 
-
- // $("#offer").animate({
- //    bottom: "100px",
- //    }, 1200);
- //  });
+ 
 
 
 
