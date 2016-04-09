@@ -1,0 +1,24 @@
+/*
+//Offer CSS section /////
+*/
+
+#offer{
+	top: 400px;
+	background:yellow;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	
+	padding-left: 5px;
+	width:100px;
+	position: fixed;
+}
+
+table, th, td {
+
+	align:center;
+	background-color: rosybrown;
+	font-size: 16px;
+	width: 100%;
+	height:200%;
+	table-layout:fixed;
+}

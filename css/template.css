@@ -1,23 +1,7 @@
-/**
 
-THIS CSS FILE IS DIVIDED IN TWO SECTIONS (GENERAL, SPECIFIC) 
-
--THE GENERAL SECTION CONTAINS THE TEMPLATE FOR THE WEBSITE. 
-	* EVERY PAGE SHOULD USE THE GENERAL SECTION TO DEFINE ITS TEMPLATE (HEADER, SIDEBAR, FOOTER AND CONTENT)
-    * WE ALL WILL USE THIS SECTION, SO ANY MODIFICATION HERE SHOULD BE TOLD TO THE OTHERS.
-    * EVENTUALLY WE WILL PUT THIS SECTION IN ONE ONLY FILE, SO WE WILL IMPORT IT IN EVERY PAGE.
-
-- THE SPECIFIC SECTION CONTAINS THE CSS FOR ONE SPECIFIC PAGE (home, artists, gallery, contact,...)
-	* THIS IS THE PART THAT EVERYONE SHOULD MODIFY TO THEIR SPECIFIC REQUIREMENTS.
-	* THIS SECTION WILL BE ONLY APPLIED TO ONE PAGE
-    * EVENTUALLY WE WILL PUT THIS SECTION IN ONE ONLY FILE, SO WE CAN IMPORT IT JUST WHEN IT'S NEEDED
-
-*/
-
-
-/*//////////////////////////
+/*///////////////////////////////////
 // GENERAL CSS TEMPLATE Section /////
-//////////////////////////*/
+///////////////////////////////////*/
 
 header,
 section,
@@ -63,13 +47,6 @@ header nav a:hover {
     box-shadow: 0 1px 1px #777;
     zoom:1.1;
     -moz-transform: scale(1.1); /* zoom for Firefox only */
-/*    position: absolute;
-content:"";
-    transition:all 0.3s ease 0s;
-    transform-origin:0 50% 0;
-    transform:scale(0, 1);
-    background-color:#69b241;*/
-
 }
 
 *html header nav a:hover { /* IE6 only */
@@ -168,5 +145,11 @@ footer article#col1{
 
 footer article#col2{
 	float:right;
+}
+
+.row { 
+    margin-top:35px;
+    margin-bottom:15px;
+    clear:left;
 }
 

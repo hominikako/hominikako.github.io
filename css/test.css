@@ -1,0 +1,260 @@
+/**
+
+THIS CSS FILE IS DIVIDED IN TWO SECTIONS (GENERAL, SPECIFIC) 
+
+-THE GENERAL SECTION CONTAINS THE TEMPLATE FOR THE WEBSITE. 
+	* EVERY PAGE SHOULD USE THE GENERAL SECTION TO DEFINE ITS TEMPLATE (HEADER, SIDEBAR, FOOTER AND CONTENT)
+    * WE ALL WILL USE THIS SECTION, SO ANY MODIFICATION HERE SHOULD BE TOLD TO THE OTHERS.
+    * EVENTUALLY WE WILL PUT THIS SECTION IN ONE ONLY FILE, SO WE WILL IMPORT IT IN EVERY PAGE.
+
+- THE SPECIFIC SECTION CONTAINS THE CSS FOR ONE SPECIFIC PAGE (home, artists, gallery, contact,...)
+	* THIS IS THE PART THAT EVERYONE SHOULD MODIFY TO THEIR SPECIFIC REQUIREMENTS.
+	* THIS SECTION WILL BE ONLY APPLIED TO ONE PAGE
+    * EVENTUALLY WE WILL PUT THIS SECTION IN ONE ONLY FILE, SO WE CAN IMPORT IT JUST WHEN IT'S NEEDED
+
+*/
+
+
+/*//////////////////////////
+// GENERAL CSS TEMPLATE Section /////
+//////////////////////////*/
+
+header,
+section,
+aside,
+footer{
+	display: block;
+}
+
+body {
+	width:960px;
+	margin: 0 auto;
+	font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;
+	background:black;
+
+}
+
+header {
+	text-align:center;
+	padding:5px;
+    border: 1px solid #222;
+    background-color: #111;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;    
+}
+
+
+header nav {
+    position: relative;
+}
+
+header a {
+    padding: 12px 30px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+header nav a:hover {
+    color: white;	
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
+    zoom:1.1;
+/*    position: absolute;
+content:"";
+    transition:all 0.3s ease 0s;
+    transform-origin:0 50% 0;
+    transform:scale(0, 1);
+    background-color:#69b241;*/
+
+}
+
+*html header nav a:hover { /* IE6 only */
+    color: #fafafa;
+}
+
+
+#sidebar {
+    float: right;
+	width:100px;
+
+}
+
+#sidebar aside{
+	position: fixed;
+	top: 100px;
+	background:orange;
+	margin-top: 30px;
+    margin-bottom: 10px;
+	padding-left: 5px;
+    width:100px;
+    background-color : transparent;
+}
+
+#sidebar aside img{
+	width:50px;
+	height:50px;
+
+}
+/*a:hover {
+	text:blue;
+	background:white;
+	opacity: 1.0;
+}*/
+
+
+#content{
+	float:left;
+	width:840px;
+   	margin-bottom: 10px;
+}
+
+
+footer {
+	clear:both;
+	text-align:center;
+	padding:5px;
+   // border: 1px solid #222;
+    background-color: #111;
+    background-image: linear-gradient(#111, #444);
+    border-radius: 6px;
+   // box-shadow: 0 1px 1px #777;
+    
+}
+
+
+#offer{
+	top: 400px;
+	background:yellow;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	
+	padding-left: 5px;
+	width:100px;
+	position: fixed;
+}
+
+.rows {
+	clear:left;
+}
+
+/*//////////////////////////
+// SPECIFIC Artist CSS section /////
+//////////////////////////*/
+
+#artists  {
+	padding: 10px;
+	background-color: black;
+	color: white;
+}
+
+#artists div img {
+	    width: 260px;
+	    height: 350px;
+    	/*display: inline-block;*/
+    	text-align:center;
+}
+
+#artists h2{
+	text-align:center;
+	//	text-shadow: 0 1px 0 #000;
+
+}
+
+#artists p{
+	padding-left: 100px;
+	padding-right	: 80px;
+	float: left;
+	width: 180px;
+	text-align: justify;
+	
+}
+
+
+#artist1:hover {
+	box-shadow: 10px 10px 10px rgba(255, 0, 0, 5);
+}
+#artist2:hover {
+	box-shadow: 10px 10px 10px rgba(35, 173, 278, 5);
+}
+
+.artist1dialog {
+}
+
+.artist_photos  {
+  	width: 460px;
+	height: 500px;
+	color: white;
+}
+
+
+.artist_photos section  {
+	margin-top: 20px;
+	width: 460px;
+	height: 400px;
+}
+
+.artist_photos aside{
+	width: 460px;
+	height: 80px;
+	position:static;
+}
+
+.artist_photos .photo_menu {
+	width: 460px;
+	height: 80px;
+	position:static;
+
+}
+
+.artist_photos aside img {
+  	width: 60px;
+	height: 80px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#detail {
+  	width: 460px;
+	height: 400px;
+	border:0;
+}
+
+.dialogs {
+	//background-color: black;
+}
+.ui-widget-content{
+	background-color: black;
+	background: transparent; /* For browsers that do not support gradients */
+	border:1;
+
+}
+
+.ui-dialog {
+	border:0px ; 
+//	background:black;
+}
+
+.ui-dialog-titlebar{
+	background: transparent;
+	boder:0px;
+}
+
+.ui-widget-header{
+	border: 1px solid white;
+}
+
+
+
+.body-gray {
+
+background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    )
+}
+

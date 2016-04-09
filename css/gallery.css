@@ -1,0 +1,30 @@
+/*
+//Gallery CSS section /////
+*/
+#gallery {
+	padding-top: 10px;
+	background-color:black;
+	text align:center;
+	text margin:20px;
+	color:white;
+}
+
+#gallery div img {
+	width: 250px;
+	height: 350px;
+    display: inline-block;
+    margin-left: 20px;
+    box-shadow: 10px 10px 10px red;
+}
+
+
+#gallery div img:hover{
+    box-shadow: 10px 10px 10px white;	
+}
+
+
+#gallery div h2 {
+	text-align:center;
+	text margin:20px;
+}
+
