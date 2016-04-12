@@ -14,36 +14,35 @@
         duration: 1000
       },
       open: function(event,ui){
-        //$("#artistdialog").siblings('.ui-dialog-titlebar').remove();
-        $('body').addClass('body-gray');
-
+        $('body').addClass('body-gray'); //changes background color
       },
-
 	    close: function(event, ui){
-        $('body').removeClass('body-gray');
-		    $( "#artistdialog" ).empty();
+        $('body').removeClass('body-gray'); //changes back background color
+		    $( "#artistdialog" ).empty(); // removes the loaded info from the main page
 
 	   }
 	 });
 
+    //Triggers when click on image of artist 1
     $( "#artist1" ).click(function() {
-      $( "#artistdialog" ).load( "artist1.html" );
-      $( "#artistdialog").css("background","linear-gradient(#600, #111)");
-      $( "#artistdialog" ).dialog( "open" );
+      $( "#artistdialog" ).load( "_artist1.html" ); //Loads the HTML page into the dialog box
+      $( "#artistdialog").css("background","linear-gradient(#600, #111)"); // changes backgroun color of dialog box
+      $( "#artistdialog" ).dialog( "open" ); // opens dialog box
     });
 
+    //Triggers when click on image of artist 2
     $( "#artist2" ).click(function() {
-      $( "#artistdialog" ).load( "artist2.html" );
-      $( "#artistdialog").css("background-image","linear-gradient(#006, #111)");
-	    $( "#artistdialog" ).dialog( "open" );
+      $( "#artistdialog" ).load( "_artist2.html" ); //Loads the HTML page into the dialog box
+      $( "#artistdialog").css("background-image","linear-gradient(#006, #111)"); // changes backgroun color of dialog box
+	    $( "#artistdialog" ).dialog( "open" ); // opens dialog box
     });
 
-	//This is like this becasue the HTML was loaded(injected) after loading the main page.
-	// see this -> http://stackoverflow.com/a/14339454
-	$(document).on('mouseover','.artist_photos aside img',function(){
-
-		$("#detail").attr("src", $(this).attr('src'));
-	});
+  	//I am using this way of capturing the mouseover event becaue the HTML code with the style which is used as selector was loaded(injected) after loading the main page. 
+  	// info -> http://stackoverflow.com/a/14339454
+    // Loads the image which the mouse is passing over into a bigger area
+  	$(document).on('mouseover','.artist_photos aside img',function(){
+  		$("#detail").attr("src", $(this).attr('src'));
+  	});
 
  });
 

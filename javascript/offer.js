@@ -30,31 +30,31 @@ function enableTattoed(){
 
 
 function validate(){
+
 		var noErrors = true;
 
 
-		var name1 = document.getElementById("fname");
-		name1.style.backgroundColor  = "white";
+		var firstName = document.getElementById("fname");
+		firstName.style.backgroundColor  = "white";
 		var errorFname = document.getElementById("errorFname");
 		errorFname.innerHTML = "";
-		if(name1.value == "") {
-			name1.style.backgroundColor  = "red";
+		if(firstName.value == "") {
+			firstName.style.backgroundColor  = "red";
 			errorFname.innerHTML = "<p>Please enter your first name</p>";
 			errorFname.style.color= "red";
 			noErrors = false;
 		}
 
-		var name2 = document.getElementById("lname");
-		name2.style.backgroundColor  = "white";
+		var lastName = document.getElementById("lname");
+		lastName.style.backgroundColor  = "white";
 		var errorLname = document.getElementById("errorLname");
 		errorLname.innerHTML = "";
-		if(name2.value == "") {
-			name2.style.backgroundColor  = "red";
+		if(lastName.value == "") {
+			lastName.style.backgroundColor  = "red";
 			errorLname.innerHTML = "<p>Please enter your last name</p>";
 			errorLname.style.color= "red";
-			errorLname.style.fontSize="12";
+			noErrors = false;
 		}
-
 
 		var emailAdd = document.getElementById("emailAddress");
 		emailAdd.style.backgroundColor = "white";
@@ -64,6 +64,7 @@ function validate(){
 			emailAdd.style.backgroundColor= "red";
 			errorEmail.innerHTML = "<p>Please enter your email addresss</p>";
 			errorEmail.style.color= "red";
+			noErrors = false;
 		}
 
 
@@ -106,10 +107,6 @@ function validate(){
 			errorTerms.style.color = "red";
 			noErrors = false;
 		}
-
-		// if (noErrors){
-		// 	alert("form submitted");
-		// }
 
 		return noErrors;
 }
