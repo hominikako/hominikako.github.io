@@ -26,6 +26,22 @@ header {
     border-radius: 6px;    
 }
 
+#logo {
+    width: 100px;
+    padding-left: 50px;
+}
+#logo img{
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+}
+
+header h1 {
+    color: #999;
+    text-transform: uppercase;
+    text-shadow: 0 0 0 #fff, 0 -0.04em 0.04em #fff, 0 -0.08em 0.08em #99f, 0 -0.12em 0.12em #99f, 0 -0.16em 0.16em #00f, 0 -0.2em 0.2em #00f, 0 -0.24em 0.24em #00f, 0 -0.28em 0.28em #009, 0 -0.32em 0.32em #009, 0 -0.36em 0.36em #009, 0 -0.4em 0.4em #009;
+
+}
 
 header nav {
     position: relative;

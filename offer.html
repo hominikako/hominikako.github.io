@@ -16,7 +16,7 @@
 			  <a href="index.html">Home</a> |
 			  <a href="artists.html">Artists</a> |
 			  <a href="gallery.html">Gallery</a> |
-			  <a href="#">Contact</a> |
+			  <a href="contact.html">Contact</a> |
 			</nav>
 		</header>
 
@@ -33,10 +33,12 @@
 		<section id="content">
 
 			<form action="index.html" method="post" >
-				<div id="tatooOffer">
+
+				<div id="offer">
 					<table>
 						<tr>
 							<td colspan="2" align="center"> 
+								<h3>This offer is just available during the month of April!!</h3>
 								<b>Fill out this form to get a 20% off your first tattoo!</br>
 								Already a customer? We will make a special offer just for you!</b>
 								</br>
@@ -62,23 +64,26 @@
 						</tr>
 						<tr>
 							<td> Is this your first tattoo? </td>
-							<td> <input type="radio" value="y" name="tattoo" value="fTattoo"/>yes
-							    <input type="radio" value="n" name="tattoo" value= "sTattoo" />no
-							    <span id= "errorTattoo"></span>
+							<td> 
+								<input type="radio" value="y" name="firstTattoo" onclick="disableTattoed();"/>yes
+							    <input type="radio" value="n" name="firstTattoo" onclick="enableTattoed();"/>no
+							    <span id= "errorFirstTattoo"></span>
 							</td>
 						</tr>
 						<tr>
-							<td> Have u got tattooed in our studio before?
+							<td> Have you got tattooed in our studio before?
 							</td>
-							<td> <input type="radio" value="yes1" name="cust" id="customer"/>yes
-							 		<input type="radio" value="no1" name="cust" id="newCustomer"/>no
-							 		<span id="errorCust"></span>
+							<td> 
+								<input type="radio" value="y" name="tattooed"/>yes
+							 	<input type="radio" value="n" name="tattooed"/>no
+							 	<span id="errorTattooed"></span>
 							</td>
 						</tr>
 						<tr>
 							<td colspan="2">
 								<input type="checkbox" id="terms"/>
 								<a href="#" onclick="showTerms()"> I accept Terms And Conditions</a>
+								<span id="errorTerms"></span>
 							</td>
 						</tr>
 						<tr>
@@ -95,7 +100,7 @@
 			<article id="col1">
 				Clanbrassil Lower Street, Dublin 8
 				<br>Dublin
-				<br>Ph:  0858423384
+				<br>Tel +353 85 2138921
 				<br>gypsyrosetattoo@gmail.com
 			</article>
 			<article id="col2">

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<link rel="stylesheet" href="css/template.css">
+  		<link rel="stylesheet" href="css/contact.css">
+
+  		<script src="javascript/contact.js"></script>
+
+
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Test Title</h1>
+			<nav>
+			  | 
+			  <a href="index.html">Home</a> |
+			  <a href="artists.html">Artists</a> |
+			  <a href="gallery.html">Gallery</a> |
+			  <a href="contact.html">Contact</a> |
+			</nav>
+		</header>
+
+		<section id="sidebar">
+			<aside id="offer">
+					<p><a href="offer.html"><img src="img/icons/offer.png"></img></a></p>
+			</aside>
+			<aside>
+				<p><a href="#"><img src="img/icons/facebook.png"></img></a></p>
+				<p><a href="#"><img src="img/icons/twitter.png"></img></a></p>
+				<p><a href="#"><img src="img/icons/instagram.png"></img></a></p>
+				<p><a href="#"><img src="img/icons/youtube.png"></img></a></p>
+			</aside>
+		</section>
+
+		<section id="content">
+		
+			<h3> CONTACT US </h3>
+			
+			<form id = "theForm" action ="#" method = "post" onsubmit= "return validateTextBox()"> 
+				<p>
+					<div class= "row">
+					<label for="name"> your name*: 
+					<input type="text" id="name" name ="name" size = "30"></label>
+					</div>
+							
+					<div class="row">
+					<label for = "email"> your e-mail address*: 
+					<input type = "email" id = "email" name ="email" size="30"></label>
+					</div>
+					
+					<div class="row">
+					<label for = "text"> subject*: 
+					<input type= "text" id="subject" name ="subject" size = "30"></label>
+					</div>
+					
+					<div class="row" >
+					<label for = "inquiry"><label>
+					<textarea  id= "inquiry" cols= "60" rows= "5" name = "inquiry" placeholder = "your message..."></textarea> <br/>
+					</div><br/><br/>
+					
+					<div class="row">
+					<label for = "submit"></label>
+					<input type= "submit" id="submit" value="send message"  name="submit" onclick ="return validate value()">
+					</div>
+				</p>
+				<br/>				
+			</form>
+				
+			<div id = "address">
+				<table>
+				<tr><th>VISIT US </th></tr>
+				<tr><td colspan="2">Clanbrassil Lower Street, Dublin 8</br> Dublin<br/>Tel +353 85 2138921 </tr>
+				</table>
+			</div>
+			<br/>
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.429921042366!2d-6.27587568459293!3d53.33555987997679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c2223a2b2f9%3A0x58003807f138d08e!2s8+Clanbrassil+Street+Lower%2C+Dublin!5e0!3m2!1sen!2sie!4v1460400382245" width="690" height="250" frameborder="0" style="border:0" marginheight="4"></iframe>
+		</section>
+	
+		<footer>
+			<article id="col1">
+				Clanbrassil Lower Street, Dublin 8
+				<br>Dublin
+				<br>Tel +353 85 2138921
+				<br>gypsyrosetattoo@gmail.com
+			</article>
+			<article id="col2">
+				Tuesday- Saturday  11.00 - 6.00
+				<br>Thursday  11.00 - 8.00
+				<br>Sunday - Monday-Closed
+			</article>
+			<small>© Copyright 2016, Mock website for NCI Project.</small>
+		</footer>
+
+
+	</body>
+</html>
