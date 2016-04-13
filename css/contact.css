@@ -11,8 +11,9 @@ h3 {color: white;
 	color: black;
 	width:150px;
 	height: 130px;
-	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); 
+	/*background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); */
+	background: -linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); 
 	border: solid 4px grey;
 	border-radius:5px;
 	text-align: center;
@@ -28,9 +29,9 @@ h3 {color: white;
 	display: table;
 	border: solid 4px grey;
 	border-radius:5px;
-	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-
+/*	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);*/
+	background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
 }
 	
 .row {
