@@ -11,9 +11,7 @@ h3 {color: white;
 	color: black;
 	width:150px;
 	height: 130px;
-	/*background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); */
-		background: linear-gradient(
+	background: linear-gradient(
 					     		to bottom, rgba( 204, 204, 204, 0.7), 
 					      		 rgba( 238, 238, 238, 0.7)
 					    );
@@ -32,9 +30,7 @@ h3 {color: white;
 	display: table;
 	border: solid 4px grey;
 	border-radius:5px;
-/*	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);*/
-		background: linear-gradient(
+	background: linear-gradient(
 					     		to bottom, rgba( 204, 204, 204, 0.7), 
 					      		 rgba( 238, 238, 238, 0.7)
 					    );
@@ -54,8 +50,4 @@ h3 {color: white;
 	display: table-cell;
 	padding: 2px;
 	border-radius:5px;
-}
-
-textarea {
-	position:absolute;
 }
