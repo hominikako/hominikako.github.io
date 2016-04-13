@@ -33,7 +33,6 @@ function validate(){
 
 		var noErrors = true;
 
-
 		var firstName = document.getElementById("fname");
 		firstName.style.backgroundColor  = "white";
 		var errorFname = document.getElementById("errorFname");

@@ -26,14 +26,14 @@
     //Triggers when click on image of artist 1
     $( "#artist1" ).click(function() {
       $( "#artistdialog" ).load( "artist1.html" ); //Loads the HTML page into the dialog box
-      $( "#artistdialog").css("background","linear-gradient(#600, #111)"); // changes backgroun color of dialog box
+      $( "#artistdialog").css("background","linear-gradient(#a00, #111)"); // changes backgroun color of dialog box
       $( "#artistdialog" ).dialog( "open" ); // opens dialog box
     });
 
     //Triggers when click on image of artist 2
     $( "#artist2" ).click(function() {
       $( "#artistdialog" ).load( "artist2.html" ); //Loads the HTML page into the dialog box
-      $( "#artistdialog").css("background-image","linear-gradient(#006, #111)"); // changes backgroun color of dialog box
+      $( "#artistdialog").css("background-image","linear-gradient(#aaa, #111)"); // changes backgroun color of dialog box
 	    $( "#artistdialog" ).dialog( "open" ); // opens dialog box
     });
 

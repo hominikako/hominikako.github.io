@@ -37,7 +37,6 @@ header {
 }
 
 header h1 {
-    /*//color: #999;*/
     text-transform: uppercase;
     text-shadow: 0px 0px 10px rgba(255,0,0,0.8), 0px 0px 30px rgba(255,0,0,0.8), 0px 0px 50px rgba(255,0,0,0.8), 0px 0px 180px rgba(255,0,0,0.8);
     color: rgba(255,255,255,0.7);
@@ -66,9 +65,12 @@ header nav a:hover {
     -moz-transform: scale(1.1); /* zoom for Firefox only */
 }
 
-*html header nav a:hover { /* IE6 only */
-    color: #fafafa;
-}
+header nav a#active {
+    color: red; 
+    zoom:1.1;
+    -moz-transform: scale(1.1); /* zoom for Firefox only */
+    text-shadow: 0px 0px 5px rgba(200, 200, 200, 0.5);
+} 
 
 
 #sidebar {

@@ -1,11 +1,6 @@
 /*
 //Artists CSS section /////
 */
-header nav a:nth-child(2) {
-    color: red;	
-    zoom:1.1;
-    -moz-transform: scale(1.1); /* zoom for Firefox only */
-} 
 
 #artists  {
 	padding: 10px;
@@ -25,7 +20,7 @@ header nav a:nth-child(2) {
 
 #artists p{
 	padding-left: 100px;
-	padding-right	: 80px;
+	padding-right: 80px;
 	float: left;
 	width: 180px;
 	text-align: justify;
@@ -37,10 +32,7 @@ header nav a:nth-child(2) {
 	box-shadow: 10px 10px 10px rgba(255, 0, 0, 5);
 }
 #artist2:hover {
-	box-shadow: 10px 10px 10px rgba(35, 173, 278, 5);
-}
-
-.artist1dialog {
+	box-shadow: 10px 10px 10px rgba(211, 211, 211, 5);
 }
 
 .artist_photos  {
@@ -107,12 +99,16 @@ header nav a:nth-child(2) {
 }
 
 
-
 .body-gray {
 
+/*  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/
 background:
     linear-gradient(
-      rgba(0, 0, 0, 0.7), 
+      rgba(122, 122, 122, 0.7), 
       rgba(0, 0, 0, 0.7)
     )
 }
