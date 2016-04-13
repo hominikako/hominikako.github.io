@@ -13,7 +13,10 @@ h3 {color: white;
 	height: 130px;
 	/*background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
 	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); */
-	background: -linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); 
+		background: linear-gradient(
+					     		to bottom, rgba( 204, 204, 204, 0.7), 
+					      		 rgba( 238, 238, 238, 0.7)
+					    );
 	border: solid 4px grey;
 	border-radius:5px;
 	text-align: center;
@@ -31,7 +34,10 @@ h3 {color: white;
 	border-radius:5px;
 /*	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
 	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);*/
-	background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+		background: linear-gradient(
+					     		to bottom, rgba( 204, 204, 204, 0.7), 
+					      		 rgba( 238, 238, 238, 0.7)
+					    );
 }
 	
 .row {

@@ -107,8 +107,8 @@
   -ms-filter: blur(5px);
   filter: blur(5px);*/
 background:
-    linear-gradient(
-      rgba(122, 122, 122, 0.7), 
-      rgba(0, 0, 0, 0.7)
-    )
+	linear-gradient(
+					      rgba(204, 204, 204, 0.7), 
+					      rgba(238, 238, 238, 0.7)
+					    );
 }
